@@ -132,5 +132,5 @@ function cegeka_install() {
   variable_set('suggestions_profiles', array('general' => 'general', 'development' => 'development'));
 
   // workaround for issue in Less module (http://drupal.org/node/1506474)
-  module_enable(array('less'));
+  //module_enable(array('less'));
 }
