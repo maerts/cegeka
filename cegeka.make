@@ -42,8 +42,8 @@ projects[] = imce_wysiwyg
 
 projects[] = l10n_client
 
-; beta 2 release is quite outdated (May 2011), so we use dev instead
-projects[] = l10n_update
+; beta 3 release is quite outdated (Februari 2012), so we use dev instead, beta-3 gives fatal error on installation
+projects[l10n_update][version] = 1.x-dev
 
 ; required by our admin theme woody
 ;projects[] = less
