@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+ makefile="default";
+else
+ makefile="$1";
+fi
+
+possiblepaths=("/usr/etc/cegeka/$makefile.make" "/etc/cegeka/$makefile.make");
+for possiblepath in "${possiblepaths[@]}"
+do
+ if [ -f "$possiblepath" ]; then
+ makefilepath="$possiblepath";
+ break;
+ fi
+done;
+
+if [ -z "$makefilepath" ]; then
+  echo "unable to find makefile '$makefile', tried: " >&2;
+  printf -- "- %s\n" "${possiblepaths[@]}" >&2;
+  exit 1;
+fi
+
+# Attempt to run the cegeka installation, exit the script in case of failure
+drush make "$makefilepath" || exit $?
+
+# Create the needed directories and set permissions
+mkdir sites/default/files
+cp sites/default/default.settings.php sites/default/settings.php
+chmod 777 sites/default/files
+chmod 666 sites/default/settings.php
