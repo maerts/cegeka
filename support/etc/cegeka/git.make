@@ -12,5 +12,3 @@ projects[cegeka][type] = profile
 projects[cegeka][download][type] = git
 projects[cegeka][download][url] = https://github.com/maerts/cegeka.git
 project[cegeka][download][branch] = master
-;for future incase of fserver
-;projects[cegeka][location] = "fserverurl"
