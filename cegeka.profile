@@ -20,7 +20,7 @@ function system_form_install_settings_form_alter(&$form, $form_state) {
     // expand the fieldset by default
     $form['settings']['mysql']['advanced_options']['#collapsed'] = FALSE;
 
-    $form['settings']['mysql']['advanced_options']['host']['#default_value'] = 'mysqlhost';
+    $form['settings']['mysql']['advanced_options']['host']['#default_value'] = 'localhost';
   }
 }
 
