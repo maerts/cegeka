@@ -86,9 +86,9 @@ function cegeka_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', array('tao', 'rubik', 'rubik_left'), 'IN')
+    ->condition('name', array('tao', 'rubik'), 'IN')
     ->execute();
-  variable_set('admin_theme', 'rubik_left');
+  variable_set('admin_theme', 'rubik');
   variable_set('node_admin_theme', '1');
 
   // change the Views UI settings to more developer oriented values.
