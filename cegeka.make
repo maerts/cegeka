@@ -73,16 +73,6 @@ projects[] = reroute_email
 
 projects[] = strongarm
 
-projects[suggestions][type] = module
-projects[suggestions][download][type] = git
-projects[suggestions][download][url] = https://github.com/maerts/suggestions.git
-project[suggestions][download][branch] = master
-
-projects[cegeka_suggestion_profiles][type] = module
-projects[cegeka_suggestion_profiles][download][type] = git
-projects[cegeka_suggestion_profiles][download][url] = https://github.com/maerts/cegeka_suggestion_profiles.git
-project[cegeka_suggestion_profiles][download][branch] = master
-
 ; required by pathauto
 projects[] = token
 

@@ -128,9 +128,6 @@ function cegeka_install() {
   // check for module updates weekly
   variable_set('update_check_frequency', 7);
 
-  // enable suggestion profiles
-  variable_set('suggestions_profiles', array('general' => 'general', 'development' => 'development'));
-
   // workaround for issue in Less module (http://drupal.org/node/1506474)
   //module_enable(array('less'));
 }
