@@ -6,6 +6,7 @@ projects[] = admin_menu
 ; ?
 ;projects[] = better_exposed_filters
 
+project [] = cdn
 
 ; ?
 ;projects[] = context
@@ -13,7 +14,7 @@ projects[] = admin_menu
 projects[] = ctools
 
 ; ?
-;projects[] = date
+projects[] = date
 
 projects[] = devel
 
@@ -24,6 +25,10 @@ projects[] = diff
 
 ; required by views_bulk_operations
 projects[] = entity
+
+projects[] = environment_indicator
+
+projects[] = elysia_cron
 
 projects[] = features
 
@@ -56,6 +61,8 @@ projects[] = libraries
 
 projects[] = menu_block
 
+projects[] = memcache
+
 projects[] = module_filter
 
 projects[] = override_node_options
@@ -79,6 +86,8 @@ projects[] = token
 projects[] = transliteration
 
 projects[] = variable
+
+projects[] = varnish
 
 projects[] = view_unpublished
 
